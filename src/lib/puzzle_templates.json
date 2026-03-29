@@ -1,0 +1,23 @@
+[
+  {
+  "id": "KrazyDad-TBD",
+  "source": "KrazyDad",
+  "difficulty": "Medium",
+  "puzzle": [
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null]
+  ],
+  "solution": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
+  }
+]
