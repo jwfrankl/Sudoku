@@ -265,7 +265,9 @@ export default function App() {
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (gameStatus === 'won') return;
     
-    if (e.ctrlKey && e.key === 'z') {
+    if (e.key === 'Escape') {
+      setSelectedCell(null);
+    } else if (e.ctrlKey && e.key === 'z') {
       handleUndo();
     } else if (e.key >= '1' && e.key <= '6') {
       updateCell(parseInt(e.key));
