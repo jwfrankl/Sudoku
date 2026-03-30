@@ -1,5 +1,5 @@
 {
-  "name": "Mini Sudoku 6x6",
-  "description": "A 6x6 Sudoku game inspired by LinkedIn's mini-games, featuring notes, undo, and keyboard support.",
+  "name": "Mini Sudoku",
+  "description": "A 6x6 Sudoku game inspired by LinkedIn's mini-games.",
   "requestFramePermissions": []
 }

@@ -7,9 +7,6 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Pencil, Eraser, RotateCcw, CheckCircle2, Lightbulb } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
-  generateSolution, 
-  generatePuzzle, 
-  Grid, 
   checkConflicts, 
   isComplete 
 } from './lib/sudoku';
@@ -308,7 +305,7 @@ export default function App() {
     return (
       <div className="min-h-screen bg-[#F3F2EF] flex flex-col items-center justify-center p-4 font-sans text-[#191919]">
         <div className="w-full max-w-md bg-white rounded-xl shadow-sm p-6 flex flex-col gap-6 text-center">
-          <h1 className="text-2xl font-bold tracking-tight">Sudoku 6x6</h1>
+          <h1 className="text-2xl font-bold tracking-tight">Mini Sudoku</h1>
           <p className="text-[#5C5C5C]">No puzzles found for the selected filters.</p>
           <div className="grid grid-cols-2 gap-4 text-left">
             <div className="flex flex-col gap-1">
@@ -374,7 +371,7 @@ export default function App() {
       <div className="w-full max-w-md bg-white rounded-xl shadow-sm p-6 flex flex-col gap-6">
         <div className="flex justify-between items-center">
           <div className="flex flex-col">
-            <h1 className="text-2xl font-bold tracking-tight">Sudoku 6x6</h1>
+            <h1 className="text-2xl font-bold tracking-tight">Mini Sudoku</h1>
             <div className="text-sm font-mono text-[#5C5C5C] font-medium">
               Time: {formatTime(seconds)}
             </div>
@@ -603,7 +600,7 @@ export default function App() {
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-[#191919]">Puzzle Solved!</h2>
-                <p className="text-[#5C5C5C] mt-2">Great job! You've completed the 6x6 Sudoku in {formatTime(seconds)}.</p>
+                <p className="text-[#5C5C5C] mt-2">Great job! You've completed the Sudoku puzzle in {formatTime(seconds)}.</p>
               </div>
               <div className="w-full">
                 <button
