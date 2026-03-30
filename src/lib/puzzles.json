@@ -4,20 +4,20 @@
     "source": "source1",
     "difficulty": "Easy",
     "puzzle": [
-      [1, null, 3, null, 5, null],
-      [null, 5, null, 1, null, 3],
-      [2, null, null, null, 6, null],
-      [null, 6, null, null, null, 1],
-      [3, null, 2, null, 4, null],
-      [null, 4, null, 3, null, 2]
+      [1,null,3,null,5,null],
+      [null,5,null,1,null,3],
+      [2,null,null,null,6,null],
+      [null,6,null,null,null,1],
+      [3,null,2,null,4,null],
+      [null,4,null,3,null,2]
     ],
     "solution": [
-      [1, 2, 3, 4, 5, 6],
-      [4, 5, 6, 1, 2, 3],
-      [2, 3, 1, 5, 6, 4],
-      [5, 6, 4, 2, 3, 1],
-      [3, 1, 2, 6, 4, 5],
-      [6, 4, 5, 3, 1, 2]
+      [1,2,3,4,5,6],
+      [4,5,6,1,2,3],
+      [2,3,1,5,6,4],
+      [5,6,4,2,3,1],
+      [3,1,2,6,4,5],
+      [6,4,5,3,1,2]
     ]
   },
   {
@@ -25,20 +25,20 @@
     "source": "source2",
     "difficulty": "Medium",
     "puzzle": [
-      [null, 4, null, 3, null, 2],
-      [3, null, 2, null, 4, null],
-      [null, 6, null, null, null, 1],
-      [2, null, null, null, 6, null],
-      [null, 5, null, 1, null, 3],
-      [1, null, 3, null, 5, null]
+      [null,4,null,3,null,2],
+      [3,null,2,null,4,null],
+      [null,6,null,null,null,1],
+      [2,null,null,null,6,null],
+      [null,5,null,1,null,3],
+      [1,null,3,null,5,null]
     ],
     "solution": [
-      [6, 4, 5, 3, 1, 2],
-      [3, 1, 2, 6, 4, 5],
-      [5, 6, 4, 2, 3, 1],
-      [2, 3, 1, 5, 6, 4],
-      [4, 5, 6, 1, 2, 3],
-      [1, 2, 3, 4, 5, 6]
+      [6,4,5,3,1,2],
+      [3,1,2,6,4,5],
+      [5,6,4,2,3,1],
+      [2,3,1,5,6,4],
+      [4,5,6,1,2,3],
+      [1,2,3,4,5,6]
     ]
   },
   {
@@ -46,20 +46,20 @@
     "source": "source1",
     "difficulty": "Medium",
     "puzzle": [
-      [2, null, 1, null, 6, null],
-      [null, 6, null, 2, null, 1],
-      [1, null, null, null, 5, null],
-      [null, 5, null, null, null, 3],
-      [6, null, 5, null, 1, null],
-      [null, 1, null, 6, null, 5]
+      [2,null,1,null,6,null],
+      [null,6,null,2,null,1],
+      [1,null,null,null,5,null],
+      [null,5,null,null,null,3],
+      [6,null,5,null,1,null],
+      [null,1,null,6,null,5]
     ],
     "solution": [
-      [2, 3, 1, 5, 6, 4],
-      [5, 6, 4, 2, 3, 1],
-      [1, 2, 3, 4, 5, 6],
-      [4, 5, 6, 1, 2, 3],
-      [6, 4, 5, 3, 1, 2],
-      [3, 1, 2, 6, 4, 5]
+      [2,3,1,5,6,4],
+      [5,6,4,2,3,1],
+      [1,2,3,4,5,6],
+      [4,5,6,1,2,3],
+      [6,4,5,3,1,2],
+      [3,1,2,6,4,5]
     ]
   },
   {
@@ -67,20 +67,20 @@
     "source": "source2",
     "difficulty": "Easy",
     "puzzle": [
-      [1, 4, null, 6, null, 5],
-      [null, 2, 5, null, 4, null],
-      [2, null, 4, 3, null, 6],
-      [3, null, 6, 2, null, 4],
-      [null, 3, null, 5, 6, null],
-      [5, null, 1, null, 3, 2]
+      [1,4,null,6,null,5],
+      [null,2,5,null,4,null],
+      [2,null,4,3,null,6],
+      [3,null,6,2,null,4],
+      [null,3,null,5,6,null],
+      [5,null,1,null,3,2]
     ],
     "solution": [
-      [1, 4, 3, 6, 2, 5],
-      [6, 2, 5, 1, 4, 3],
-      [2, 1, 4, 3, 5, 6],
-      [3, 5, 6, 2, 1, 4],
-      [4, 3, 2, 5, 6, 1],
-      [5, 6, 1, 4, 3, 2]
+      [1,4,3,6,2,5],
+      [6,2,5,1,4,3],
+      [2,1,4,3,5,6],
+      [3,5,6,2,1,4],
+      [4,3,2,5,6,1],
+      [5,6,1,4,3,2]
     ]
   },
   {
@@ -88,20 +88,20 @@
     "source": "source1",
     "difficulty": "Medium",
     "puzzle": [
-      [1, null, 3, null, 5, null],
-      [null, 5, null, 1, null, 3],
-      [2, null, null, null, 6, null],
-      [null, 6, null, null, null, 1],
-      [3, null, 2, null, 4, null],
-      [null, 4, null, 3, null, 2]
+      [1,null,3,null,5,null],
+      [null,5,null,1,null,3],
+      [2,null,null,null,6,null],
+      [null,6,null,null,null,1],
+      [3,null,2,null,4,null],
+      [null,4,null,3,null,2]
     ],
     "solution": [
-      [1, 2, 3, 4, 5, 6],
-      [4, 5, 6, 1, 2, 3],
-      [2, 3, 1, 5, 6, 4],
-      [5, 6, 4, 2, 3, 1],
-      [3, 1, 2, 6, 4, 5],
-      [6, 4, 5, 3, 1, 2]
+      [1,2,3,4,5,6],
+      [4,5,6,1,2,3],
+      [2,3,1,5,6,4],
+      [5,6,4,2,3,1],
+      [3,1,2,6,4,5],
+      [6,4,5,3,1,2]
     ]
   },
   {
@@ -109,20 +109,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [6, null, null, null, null, 1],
-      [null, 5, null, 6, null, null],
-      [3, 6, null, null, null, null],
-      [null, null, null, null, null, 4],
-      [null, null, null, 5, null, null],
-      [null, 1, 2, null, null, null]
+      [6,null,null,null,null,1],
+      [null,5,null,6,null,null],
+      [3,6,null,null,null,null],
+      [null,null,null,null,null,4],
+      [null,null,null,5,null,null],
+      [null,1,2,null,null,null]
     ],
     "solution": [
-      [6, 4, 3, 2, 5, 1],
-      [2, 5, 1, 6, 4, 3],
-      [3, 6, 4, 1, 2, 5],
-      [1, 2, 5, 3, 6, 4],
-      [4, 3, 6, 5, 1, 2],
-      [5, 1, 2, 4, 3, 6]
+      [6,4,3,2,5,1],
+      [2,5,1,6,4,3],
+      [3,6,4,1,2,5],
+      [1,2,5,3,6,4],
+      [4,3,6,5,1,2],
+      [5,1,2,4,3,6]
     ]
   },
   {
@@ -130,20 +130,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, null, 1, null, 3, null],
-      [null, null, null, 5, null, null],
-      [null, 5, null, 2, null, null],
-      [null, 6, null, null, null, 4],
-      [null, null, null, null, null, null],
-      [3, null, null, null, 1, null]
+      [null,null,1,null,3,null],
+      [null,null,null,5,null,null],
+      [null,5,null,2,null,null],
+      [null,6,null,null,null,4],
+      [null,null,null,null,null,null],
+      [3,null,null,null,1,null]
     ],
     "solution": [
-      [5, 4, 1, 6, 3, 2],
-      [6, 3, 2, 5, 4, 1],
-      [1, 5, 4, 2, 6, 3],
-      [2, 6, 3, 1, 5, 4],
-      [4, 1, 5, 3, 2, 6],
-      [3, 2, 6, 4, 1, 5]
+      [5,4,1,6,3,2],
+      [6,3,2,5,4,1],
+      [1,5,4,2,6,3],
+      [2,6,3,1,5,4],
+      [4,1,5,3,2,6],
+      [3,2,6,4,1,5]
     ]
   },
   {
@@ -151,20 +151,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [3, 4, null, null, 1, null],
-      [null, null, null, null, null, 2],
-      [null, 3, null, null, null, 1],
-      [6, null, null, null, null, null],
-      [null, null, null, null, 6, null],
-      [null, null, 5, 4, null, null]
+      [3,4,null,null,1,null],
+      [null,null,null,null,null,2],
+      [null,3,null,null,null,1],
+      [6,null,null,null,null,null],
+      [null,null,null,null,6,null],
+      [null,null,5,4,null,null]
     ],
     "solution": [
-      [3, 4, 2, 5, 1, 6],
-      [5, 1, 6, 3, 4, 2],
-      [2, 3, 4, 6, 5, 1],
-      [6, 5, 1, 2, 3, 4],
-      [4, 2, 3, 1, 6, 5],
-      [1, 6, 5, 4, 2, 3]
+      [3,4,2,5,1,6],
+      [5,1,6,3,4,2],
+      [2,3,4,6,5,1],
+      [6,5,1,2,3,4],
+      [4,2,3,1,6,5],
+      [1,6,5,4,2,3]
     ]
   },
   {
@@ -172,20 +172,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [3, null, 2, null, 1, null],
-      [null, null, null, null, null, null],
-      [2, null, null, null, null, null],
-      [null, 6, null, null, null, 5],
-      [null, null, null, null, null, 6],
-      [1, null, null, null, 2, null]
+      [3,null,2,null,1,null],
+      [null,null,null,null,null,null],
+      [2,null,null,null,null,null],
+      [null,6,null,null,null,5],
+      [null,null,null,null,null,6],
+      [1,null,null,null,2,null]
     ],
     "solution": [
-      [3, 5, 2, 6, 1, 4],
-      [6, 1, 4, 3, 5, 2],
-      [2, 3, 5, 4, 6, 1],
-      [4, 6, 1, 2, 3, 5],
-      [5, 2, 3, 1, 4, 6],
-      [1, 4, 6, 5, 2, 3]
+      [3,5,2,6,1,4],
+      [6,1,4,3,5,2],
+      [2,3,5,4,6,1],
+      [4,6,1,2,3,5],
+      [5,2,3,1,4,6],
+      [1,4,6,5,2,3]
     ]
   },
   {
@@ -193,20 +193,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, 1, null, null, null, 4],
-      [null, 5, null, 6, null, null],
-      [3, 6, 1, null, null, null],
-      [null, null, null, null, null, null],
-      [null, null, null, 5, null, null],
-      [null, null, 2, null, 3, null]
+      [null,1,null,null,null,4],
+      [null,5,null,6,null,null],
+      [3,6,1,null,null,null],
+      [null,null,null,null,null,null],
+      [null,null,null,5,null,null],
+      [null,null,2,null,3,null]
     ],
     "solution": [
-      [6, 1, 3, 2, 5, 4],
-      [2, 5, 4, 6, 1, 3],
-      [3, 6, 1, 4, 2, 5],
-      [4, 2, 5, 3, 6, 1],
-      [1, 3, 6, 5, 4, 2],
-      [5, 4, 2, 1, 3, 6]
+      [6,1,3,2,5,4],
+      [2,5,4,6,1,3],
+      [3,6,1,4,2,5],
+      [4,2,5,3,6,1],
+      [1,3,6,5,4,2],
+      [5,4,2,1,3,6]
     ]
   },
   {
@@ -214,20 +214,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [4, null, 1, null, 5, null],
-      [null, null, null, null, null, null],
-      [null, null, 6, null, null, null],
-      [3, null, null, null, 4, null],
-      [null, null, null, null, null, 2],
-      [5, 3, null, 6, null, null]
+      [4,null,1,null,5,null],
+      [null,null,null,null,null,null],
+      [null,null,6,null,null,null],
+      [3,null,null,null,4,null],
+      [null,null,null,null,null,2],
+      [5,3,null,6,null,null]
     ],
     "solution": [
-      [4, 6, 1, 2, 5, 3],
-      [2, 5, 3, 4, 6, 1],
-      [1, 4, 6, 3, 2, 5],
-      [3, 2, 5, 1, 4, 6],
-      [6, 1, 4, 5, 3, 2],
-      [5, 3, 2, 6, 1, 4]
+      [4,6,1,2,5,3],
+      [2,5,3,4,6,1],
+      [1,4,6,3,2,5],
+      [3,2,5,1,4,6],
+      [6,1,4,5,3,2],
+      [5,3,2,6,1,4]
     ]
   },
   {
@@ -235,20 +235,20 @@
     "source": "KrazyDad",
     "difficulty": "Hard",
     "puzzle": [
-      [null, null, null, null, 1, null],
-      [5, null, null, null, null, 2],
-      [null, null, 6, 4, null, null],
-      [null, 5, null, null, null, null],
-      [null, 2, null, null, null, 5],
-      [null, 4, null, 6, null, null]
+      [null,null,null,null,1,null],
+      [5,null,null,null,null,2],
+      [null,null,6,4,null,null],
+      [null,5,null,null,null,null],
+      [null,2,null,null,null,5],
+      [null,4,null,6,null,null]
     ],
     "solution": [
-      [3, 6, 2, 5, 1, 4],
-      [5, 1, 4, 3, 6, 2],
-      [2, 3, 6, 4, 5, 1],
-      [4, 5, 1, 2, 3, 6],
-      [6, 2, 3, 1, 4, 5],
-      [1, 4, 5, 6, 2, 3]
+      [3,6,2,5,1,4],
+      [5,1,4,3,6,2],
+      [2,3,6,4,5,1],
+      [4,5,1,2,3,6],
+      [6,2,3,1,4,5],
+      [1,4,5,6,2,3]
     ]
   },
   {
@@ -256,20 +256,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, null, null, null, 6, null],
-      [2, null, 1, null, null, null],
-      [null, null, null, 1, null, 6],
-      [null, null, null, null, 5, null],
-      [null, 3, null, null, null, null],
-      [null, null, 2, 4, null, null]
+      [null,null,null,null,6,null],
+      [2,null,1,null,null,null],
+      [null,null,null,1,null,6],
+      [null,null,null,null,5,null],
+      [null,3,null,null,null,null],
+      [null,null,2,4,null,null]
     ],
     "solution": [
-      [5, 4, 3, 2, 6, 1],
-      [2, 6, 1, 5, 4, 3],
-      [3, 5, 4, 1, 2, 6],
-      [1, 2, 6, 3, 5, 4],
-      [4, 3, 5, 6, 1, 2],
-      [6, 1, 2, 4, 3, 5]
+      [5,4,3,2,6,1],
+      [2,6,1,5,4,3],
+      [3,5,4,1,2,6],
+      [1,2,6,3,5,4],
+      [4,3,5,6,1,2],
+      [6,1,2,4,3,5]
     ]
   },
   {
@@ -277,20 +277,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, null, null, 5, null, null],
-      [null, 1, 4, null, null, null],
-      [null, 2, 3, null, null, 1],
-      [null, null, null, 6, null, null],
-      [3, null, null, null, null, null],
-      [null, 4, null, null, null, 2]
+      [null,null,null,5,null,null],
+      [null,1,4,null,null,null],
+      [null,2,3,null,null,1],
+      [null,null,null,6,null,null],
+      [3,null,null,null,null,null],
+      [null,4,null,null,null,2]
     ],
     "solution": [
-      [2, 3, 6, 5, 1, 4],
-      [5, 1, 4, 2, 3, 6],
-      [6, 2, 3, 4, 5, 1],
-      [4, 5, 1, 6, 2, 3],
-      [3, 6, 2, 1, 4, 5],
-      [1, 4, 5, 3, 6, 2]
+      [2,3,6,5,1,4],
+      [5,1,4,2,3,6],
+      [6,2,3,4,5,1],
+      [4,5,1,6,2,3],
+      [3,6,2,1,4,5],
+      [1,4,5,3,6,2]
     ]
   },
   {
@@ -298,20 +298,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, null, null, null, 3, null],
-      [1, null, null, null, null, null],
-      [null, null, null, null, null, null],
-      [null, null, null, 5, 2, null],
-      [null, 5, null, null, null, 1],
-      [null, null, 1, 4, null, null]
+      [null,null,null,null,3,null],
+      [1,null,null,null,null,null],
+      [null,null,null,null,null,null],
+      [null,null,null,5,2,null],
+      [null,5,null,null,null,1],
+      [null,null,1,4,null,null]
     ],
     "solution": [
-      [2, 4, 5, 1, 3, 6],
-      [1, 3, 6, 2, 4, 5],
-      [5, 2, 4, 6, 1, 3],
-      [6, 1, 3, 5, 2, 4],
-      [4, 5, 2, 3, 6, 1],
-      [3, 6, 1, 4, 5, 2]
+      [2,4,5,1,3,6],
+      [1,3,6,2,4,5],
+      [5,2,4,6,1,3],
+      [6,1,3,5,2,4],
+      [4,5,2,3,6,1],
+      [3,6,1,4,5,2]
     ]
   },
   {
@@ -319,20 +319,20 @@
     "source": "KrazyDad",
     "difficulty": "Hard",
     "puzzle": [
-      [null, 5, null, null, null, null],
-      [null, null, null, null, null, null],
-      [null, null, null, null, null, null],
-      [null, 2, null, null, null, null],
-      [null, null, 1, null, 6, null],
-      [null, null, null, null, null, 1]
+      [null,5,null,null,null,null],
+      [null,null,null,null,null,null],
+      [null,null,null,null,null,null],
+      [null,2,null,null,null,null],
+      [null,null,1,null,6,null],
+      [null,null,null,null,null,1]
     ],
     "solution": [
-      [1, 5, 3, 2, 4, 6],
-      [2, 4, 6, 1, 5, 3],
-      [3, 1, 5, 6, 2, 4],
-      [6, 2, 4, 3, 1, 5],
-      [5, 3, 1, 4, 6, 2],
-      [4, 6, 2, 5, 3, 1]
+      [1,5,3,2,4,6],
+      [2,4,6,1,5,3],
+      [3,1,5,6,2,4],
+      [6,2,4,3,1,5],
+      [5,3,1,4,6,2],
+      [4,6,2,5,3,1]
     ]
   },
   {
@@ -340,20 +340,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, 5, null, null, null, null],
-      [null, null, null, 4, null, null],
-      [null, null, 5, null, null, null],
-      [null, 6, null, 3, null, null],
-      [null, null, null, null, null, 6],
-      [2, null, null, null, 3, null]
+      [null,5,null,null,null,null],
+      [null,null,null,4,null,null],
+      [null,null,5,null,null,null],
+      [null,6,null,3,null,null],
+      [null,null,null,null,null,6],
+      [2,null,null,null,3,null]
     ],
     "solution": [
-      [4, 5, 3, 6, 2, 1],
-      [6, 2, 1, 4, 5, 3],
-      [3, 4, 5, 1, 6, 2],
-      [1, 6, 2, 3, 4, 5],
-      [5, 3, 4, 2, 1, 6],
-      [2, 1, 6, 5, 3, 4]
+      [4,5,3,6,2,1],
+      [6,2,1,4,5,3],
+      [3,4,5,1,6,2],
+      [1,6,2,3,4,5],
+      [5,3,4,2,1,6],
+      [2,1,6,5,3,4]
     ]
   },
   {
@@ -361,20 +361,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, null, null, null, null, 3],
-      [null, 5, null, 1, null, null],
-      [2, 1, null, null, null, null],
-      [3, null, null, null, null, 4],
-      [null, 2, null, 5, null, null],
-      [null, null, null, null, null, null]
+      [null,null,null,null,null,3],
+      [null,5,null,1,null,null],
+      [2,1,null,null,null,null],
+      [3,null,null,null,null,4],
+      [null,2,null,5,null,null],
+      [null,null,null,null,null,null]
     ],
     "solution": [
-      [1, 4, 2, 6, 5, 3],
-      [6, 5, 3, 1, 4, 2],
-      [2, 1, 4, 3, 6, 5],
-      [3, 6, 5, 2, 1, 4],
-      [4, 2, 1, 5, 3, 6],
-      [5, 3, 6, 4, 2, 1]
+      [1,4,2,6,5,3],
+      [6,5,3,1,4,2],
+      [2,1,4,3,6,5],
+      [3,6,5,2,1,4],
+      [4,2,1,5,3,6],
+      [5,3,6,4,2,1]
     ]
   },
   {
@@ -382,20 +382,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [1, null, null, null, null, null],
-      [null, null, 2, null, null, null],
-      [null, null, 6, 2, null, null],
-      [null, null, null, null, null, null],
-      [null, null, null, null, null, null],
-      [3, 2, null, null, null, null]
+      [1,null,null,null,null,null],
+      [null,null,2,null,null,null],
+      [null,null,6,2,null,null],
+      [null,null,null,null,null,null],
+      [null,null,null,null,null,null],
+      [3,2,null,null,null,null]
     ],
     "solution": [
-      [1, 6, 4, 5, 3, 2],
-      [5, 3, 2, 1, 6, 4],
-      [4, 1, 6, 2, 5, 3],
-      [2, 5, 3, 4, 1, 6],
-      [6, 4, 1, 3, 2, 5],
-      [3, 2, 5, 6, 4, 1]
+      [1,6,4,5,3,2],
+      [5,3,2,1,6,4],
+      [4,1,6,2,5,3],
+      [2,5,3,4,1,6],
+      [6,4,1,3,2,5],
+      [3,2,5,6,4,1]
     ]
   },
   {
@@ -403,20 +403,20 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, 6, null, null, null, null],
-      [null, null, null, null, null, 4],
-      [4, null, null, null, null, null],
-      [5, null, 1, null, 2, null],
-      [null, null, null, null, 5, null],
-      [1, null, null, null, null, null]
+      [null,6,null,null,null,null],
+      [null,null,null,null,null,4],
+      [4,null,null,null,null,null],
+      [5,null,1,null,2,null],
+      [null,null,null,null,5,null],
+      [1,null,null,null,null,null]
     ],
     "solution": [
-      [2, 6, 4, 3, 1, 5],
-      [3, 1, 5, 2, 6, 4],
-      [4, 2, 6, 5, 3, 1],
-      [5, 3, 1, 4, 2, 6],
-      [6, 4, 2, 1, 5, 3],
-      [1, 5, 3, 6, 4, 2]
+      [2,6,4,3,1,5],
+      [3,1,5,2,6,4],
+      [4,2,6,5,3,1],
+      [5,3,1,4,2,6],
+      [6,4,2,1,5,3],
+      [1,5,3,6,4,2]
     ]
   },
   {
@@ -424,20 +424,860 @@
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
-      [null, null, 3, null, null, null],
-      [null, null, null, 4, null, null],
-      [null, 4, null, null, 5, null],
-      [1, null, null, null, null, 2],
-      [null, null, null, null, null, 5],
-      [null, 1, null, null, null, null]
+      [null,null,3,null,null,null],
+      [null,null,null,4,null,null],
+      [null,4,null,null,5,null],
+      [1,null,null,null,null,2],
+      [null,null,null,null,null,5],
+      [null,1,null,null,null,null]
     ],
     "solution": [
-      [4, 2, 3, 5, 6, 1],
-      [5, 6, 1, 4, 2, 3],
-      [3, 4, 2, 1, 5, 6],
-      [1, 5, 6, 3, 4, 2],
-      [2, 3, 4, 6, 1, 5],
-      [6, 1, 5, 2, 3, 4]
+      [4,2,3,5,6,1],
+      [5,6,1,4,2,3],
+      [3,4,2,1,5,6],
+      [1,5,6,3,4,2],
+      [2,3,4,6,1,5],
+      [6,1,5,2,3,4]
+    ]
+  },
+  {
+    "id": "KrazyDad-3-1",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,null,1],
+      [null,6,null,5,null,null],
+      [null,5,null,null,null,6],
+      [null,null,null,3,null,null],
+      [4,null,null,null,1,null],
+      [null,null,2,null,null,5]
+    ],
+    "solution": [
+      [5,4,3,2,6,1],
+      [2,6,1,5,4,3],
+      [3,5,4,1,2,6],
+      [1,2,6,3,5,4],
+      [4,3,5,6,1,2],
+      [6,1,2,4,3,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-3-2",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,null,null],
+      [5,null,null,null,null,2],
+      [null,6,null,null,null,null],
+      [null,5,null,null,null,null],
+      [3,null,null,null,1,5],
+      [null,null,null,null,2,6]
+    ],
+    "solution": [
+      [6,3,2,5,4,1],
+      [5,4,1,6,3,2],
+      [2,6,3,1,5,4],
+      [1,5,4,2,6,3],
+      [3,2,6,4,1,5],
+      [4,1,5,3,2,6]
+    ]
+  },
+  {
+    "id": "KrazyDad-3-3",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,3,null],
+      [4,null,null,null,null,null],
+      [null,null,6,5,null,null],
+      [null,null,null,null,1,null],
+      [null,2,null,null,null,null],
+      [3,null,null,6,null,null]
+    ],
+    "solution": [
+      [1,6,2,4,3,5],
+      [4,3,5,1,6,2],
+      [2,1,6,5,4,3],
+      [5,4,3,2,1,6],
+      [6,2,1,3,5,4],
+      [3,5,4,6,2,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-3-4",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,5,null,null,null],
+      [null,1,null,2,null,null],
+      [null,2,null,null,4,null],
+      [6,null,1,null,null,null],
+      [null,null,null,1,null,null],
+      [null,null,4,null,5,null]
+    ],
+    "solution": [
+      [2,3,5,4,1,6],
+      [4,1,6,2,3,5],
+      [5,2,3,6,4,1],
+      [6,4,1,5,2,3],
+      [3,5,2,1,6,4],
+      [1,6,4,3,5,2]
+    ]
+  },
+  {
+    "id": "KrazyDad-3-5",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [6,null,null,null,null,null],
+      [null,1,null,null,null,2],
+      [2,null,null,null,null,1],
+      [5,null,null,null,6,null],
+      [null,null,6,null,5,null],
+      [null,null,null,3,null,null]
+    ],
+    "solution": [
+      [6,3,2,4,1,5],
+      [4,1,5,6,3,2],
+      [2,6,3,5,4,1],
+      [5,4,1,2,6,3],
+      [3,2,6,1,5,4],
+      [1,5,4,3,2,6]
+    ]
+  },
+  {
+    "id": "KrazyDad-3-6",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,3,null,null,null,6],
+      [2,null,null,null,null,null],
+      [null,null,null,null,2,null],
+      [null,null,1,4,null,null],
+      [null,4,null,null,null,null],
+      [1,null,null,null,null,5]
+    ],
+    "solution": [
+      [5,3,4,2,1,6],
+      [2,1,6,5,3,4],
+      [4,5,3,6,2,1],
+      [6,2,1,4,5,3],
+      [3,4,5,1,6,2],
+      [1,6,2,3,4,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-3-7",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,4,null,null],
+      [null,3,null,null,null,5],
+      [4,null,6,null,null,null],
+      [1,null,null,null,2,null],
+      [null,5,null,null,1,null],
+      [null,null,null,6,null,null]
+    ],
+    "solution": [
+      [2,6,5,4,3,1],
+      [4,3,1,2,6,5],
+      [5,2,6,1,4,3],
+      [1,4,3,5,2,6],
+      [6,5,2,3,1,4],
+      [3,1,4,6,5,2]
+    ]
+  },
+  {
+    "id": "KrazyDad-3-8",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,1,null,null,null],
+      [null,6,null,3,null,null],
+      [null,null,null,2,null,6],
+      [2,null,null,null,3,null],
+      [null,null,null,null,null,5],
+      [null,null,null,null,1,null]
+    ],
+    "solution": [
+      [3,4,1,5,6,2],
+      [5,6,2,3,4,1],
+      [1,3,4,2,5,6],
+      [2,5,6,1,3,4],
+      [4,1,3,6,2,5],
+      [6,2,5,4,1,3]
+    ]
+  },
+  {
+    "id": "KrazyDad-4-1",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,3,null,6,null,null],
+      [6,null,2,null,null,null],
+      [null,null,null,2,null,null],
+      [null,null,4,null,1,null],
+      [null,null,1,null,2,null],
+      [null,null,null,3,null,null]
+    ],
+    "solution": [
+      [1,3,5,6,4,2],
+      [6,4,2,1,3,5],
+      [5,1,3,2,6,4],
+      [2,6,4,5,1,3],
+      [3,5,1,4,2,6],
+      [4,2,6,3,5,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-4-2",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,1,null,null,null,null],
+      [null,null,null,5,null,null],
+      [null,null,null,null,2,6],
+      [4,null,null,null,null,null],
+      [null,null,5,null,null,null],
+      [6,null,null,null,3,null]
+    ],
+    "solution": [
+      [5,1,3,2,6,4],
+      [2,6,4,5,1,3],
+      [3,5,1,4,2,6],
+      [4,2,6,3,5,1],
+      [1,3,5,6,4,2],
+      [6,4,2,1,3,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-4-3",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,2,null,null,null],
+      [5,null,3,null,null,null],
+      [null,null,null,null,5,null],
+      [3,null,null,null,null,4],
+      [4,null,null,null,null,5],
+      [null,null,null,null,2,null]
+    ],
+    "solution": [
+      [1,4,2,5,6,3],
+      [5,6,3,1,4,2],
+      [2,1,4,3,5,6],
+      [3,5,6,2,1,4],
+      [4,2,1,6,3,5],
+      [6,3,5,4,2,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-4-4",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,5,null,null],
+      [null,4,3,null,null,null],
+      [null,1,null,null,null,null],
+      [null,null,null,6,null,2],
+      [2,null,null,null,3,null],
+      [4,null,null,null,null,null]
+    ],
+    "solution": [
+      [1,2,6,5,4,3],
+      [5,4,3,1,2,6],
+      [6,1,2,3,5,4],
+      [3,5,4,6,1,2],
+      [2,6,1,4,3,5],
+      [4,3,5,2,6,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-4-5",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,6,3,null,null,null],
+      [null,null,null,4,null,null],
+      [null,4,null,null,null,2],
+      [1,null,null,null,null,null],
+      [null,null,null,null,1,null],
+      [null,null,5,6,null,null]
+    ],
+    "solution": [
+      [4,6,3,5,2,1],
+      [5,2,1,4,6,3],
+      [3,4,6,1,5,2],
+      [1,5,2,3,4,6],
+      [6,3,4,2,1,5],
+      [2,1,5,6,3,4]
+    ]
+  },
+  {
+    "id": "KrazyDad-4-6",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,null,5],
+      [4,null,null,null,2,null],
+      [1,null,2,null,4,null],
+      [null,null,null,null,null,null],
+      [null,null,null,null,null,null],
+      [null,5,null,null,null,null]
+    ],
+    "solution": [
+      [6,2,1,4,3,5],
+      [4,3,5,6,2,1],
+      [1,6,2,5,4,3],
+      [5,4,3,1,6,2],
+      [2,1,6,3,5,4],
+      [3,5,4,2,1,6]
+    ]
+  },
+  {
+    "id": "KrazyDad-4-7",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,6,null,4,null],
+      [null,null,null,5,null,null],
+      [null,null,null,null,3,null],
+      [1,null,null,null,null,2],
+      [2,null,null,4,1,null],
+      [null,null,3,null,null,null]
+    ],
+    "solution": [
+      [5,2,6,3,4,1],
+      [3,4,1,5,2,6],
+      [6,5,2,1,3,4],
+      [1,3,4,6,5,2],
+      [2,6,5,4,1,3],
+      [4,1,3,2,6,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-4-8",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,1,null,3,2,null],
+      [null,null,null,null,null,6],
+      [null,null,null,4,3,null],
+      [null,null,2,null,null,null],
+      [null,null,5,null,null,null],
+      [2,4,null,1,null,null]
+    ],
+    "solution": [
+      [5,1,6,3,2,4],
+      [3,2,4,5,1,6],
+      [6,5,1,4,3,2],
+      [4,3,2,6,5,1],
+      [1,6,5,2,4,3],
+      [2,4,3,1,6,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-5-1",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,4,null,null,null],
+      [null,null,3,5,2,null],
+      [null,5,null,3,null,null],
+      [null,null,null,null,null,2],
+      [null,null,null,null,3,6],
+      [1,null,null,null,null,null]
+    ],
+    "solution": [
+      [5,2,4,6,1,3],
+      [6,1,3,5,2,4],
+      [4,5,2,3,6,1],
+      [3,6,1,4,5,2],
+      [2,4,5,1,3,6],
+      [1,3,6,2,4,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-5-2",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [5,null,null,null,null,null],
+      [null,4,null,null,null,6],
+      [null,5,3,null,null,null],
+      [1,null,null,null,5,null],
+      [null,null,null,null,null,2],
+      [null,null,null,3,6,null]
+    ],
+    "solution": [
+      [5,3,6,2,4,1],
+      [2,4,1,5,3,6],
+      [6,5,3,1,2,4],
+      [1,2,4,6,5,3],
+      [3,6,5,4,1,2],
+      [4,1,2,3,6,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-5-3",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,4,1],
+      [null,null,null,2,null,null],
+      [null,null,3,null,5,null],
+      [1,5,null,6,null,null],
+      [null,6,null,null,null,null],
+      [4,null,null,null,null,2]
+    ],
+    "solution": [
+      [2,3,6,5,4,1],
+      [5,4,1,2,3,6],
+      [6,2,3,1,5,4],
+      [1,5,4,6,2,3],
+      [3,6,2,4,1,5],
+      [4,1,5,3,6,2]
+    ]
+  },
+  {
+    "id": "KrazyDad-5-4",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,null,5],
+      [4,null,null,null,6,null],
+      [null,null,6,null,4,null],
+      [null,null,3,2,null,null],
+      [null,2,null,3,null,null],
+      [null,null,null,null,null,1]
+    ],
+    "solution": [
+      [1,6,2,4,3,5],
+      [4,3,5,1,6,2],
+      [2,1,6,5,4,3],
+      [5,4,3,2,1,6],
+      [6,2,1,3,5,4],
+      [3,5,4,6,2,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-5-5",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,4,3,null,null],
+      [3,5,null,null,null,null],
+      [null,2,1,null,null,null],
+      [null,null,null,4,null,null],
+      [null,null,null,5,6,null],
+      [5,null,null,null,null,2]
+    ],
+    "solution": [
+      [2,1,4,3,5,6],
+      [3,5,6,2,1,4],
+      [4,2,1,6,3,5],
+      [6,3,5,4,2,1],
+      [1,4,2,5,6,3],
+      [5,6,3,1,4,2]
+    ]
+  },
+  {
+    "id": "KrazyDad-5-6",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,1,null,2,null,null],
+      [null,null,null,null,1,3],
+      [null,null,null,null,null,null],
+      [null,null,4,3,5,null],
+      [1,null,5,4,6,null],
+      [null,6,null,null,null,null]
+    ],
+    "solution": [
+      [5,1,3,2,4,6],
+      [2,4,6,5,1,3],
+      [3,5,1,6,2,4],
+      [6,2,4,3,5,1],
+      [1,3,5,4,6,2],
+      [4,6,2,1,3,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-5-7",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,4,null,null,null,5],
+      [null,null,null,2,null,null],
+      [3,null,null,null,null,null],
+      [null,null,6,3,2,null],
+      [null,null,null,6,null,null],
+      [null,5,1,null,null,null]
+    ],
+    "solution": [
+      [2,4,3,1,6,5],
+      [1,6,5,2,4,3],
+      [3,2,4,5,1,6],
+      [5,1,6,3,2,4],
+      [4,3,2,6,5,1],
+      [6,5,1,4,3,2]
+    ]
+  },
+  {
+    "id": "KrazyDad-5-8",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,3,null,null,4,null],
+      [2,null,null,null,null,6],
+      [6,null,null,null,2,null],
+      [1,2,null,null,null,null],
+      [null,null,null,null,1,2],
+      [null,null,null,3,6,null]
+    ],
+    "solution": [
+      [5,3,6,2,4,1],
+      [2,4,1,5,3,6],
+      [6,5,3,1,2,4],
+      [1,2,4,6,5,3],
+      [3,6,5,4,1,2],
+      [4,1,2,3,6,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-6-1",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,6,null,1,null,null],
+      [null,4,null,null,null,null],
+      [3,null,null,null,null,4],
+      [null,null,null,null,2,null],
+      [null,null,null,null,null,null],
+      [null,null,1,6,null,null]
+    ],
+    "solution": [
+      [2,6,3,1,4,5],
+      [1,4,5,2,6,3],
+      [3,2,6,5,1,4],
+      [5,1,4,3,2,6],
+      [6,3,2,4,5,1],
+      [4,5,1,6,3,2]
+    ]
+  },
+  {
+    "id": "KrazyDad-6-2",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,3,null,2,null],
+      [5,null,null,null,null,null],
+      [null,1,null,null,null,null],
+      [null,5,2,3,null,null],
+      [null,null,null,2,null,5],
+      [null,6,null,null,null,null]
+    ],
+    "solution": [
+      [1,4,3,5,2,6],
+      [5,2,6,1,4,3],
+      [3,1,4,6,5,2],
+      [6,5,2,3,1,4],
+      [4,3,1,2,6,5],
+      [2,6,5,4,3,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-6-3",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,3,null,null,null],
+      [4,null,null,null,1,null],
+      [null,5,null,null,null,null],
+      [null,4,2,3,null,null],
+      [null,null,5,2,null,null],
+      [null,null,null,null,3,null]
+    ],
+    "solution": [
+      [5,1,3,4,2,6],
+      [4,2,6,5,1,3],
+      [3,5,1,6,4,2],
+      [6,4,2,3,5,1],
+      [1,3,5,2,6,4],
+      [2,6,4,1,3,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-6-4",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,2,null,null],
+      [null,5,null,null,null,4],
+      [null,1,null,null,null,null],
+      [null,2,null,4,null,null],
+      [6,null,null,5,3,null],
+      [null,null,2,6,null,null]
+    ],
+    "solution": [
+      [1,6,4,2,5,3],
+      [2,5,3,1,6,4],
+      [4,1,6,3,2,5],
+      [3,2,5,4,1,6],
+      [6,4,1,5,3,2],
+      [5,3,2,6,4,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-6-5",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,5,null,null,null,null],
+      [2,null,null,1,null,null],
+      [null,1,null,4,null,null],
+      [null,null,6,null,null,null],
+      [null,null,1,6,null,null],
+      [null,null,null,null,3,null]
+    ],
+    "solution": [
+      [1,5,3,2,6,4],
+      [2,6,4,1,5,3],
+      [3,1,5,4,2,6],
+      [4,2,6,3,1,5],
+      [5,3,1,6,4,2],
+      [6,4,2,5,3,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-6-6",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,6,null],
+      [null,null,5,1,null,null],
+      [null,null,null,null,null,6],
+      [null,2,null,3,5,null],
+      [3,null,1,6,null,null],
+      [null,null,null,null,4,null]
+    ],
+    "solution": [
+      [1,3,4,2,6,5],
+      [2,6,5,1,3,4],
+      [4,1,3,5,2,6],
+      [5,2,6,4,1,3],
+      [3,4,1,6,5,2],
+      [6,5,2,3,4,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-6-7",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,4,null,null,null,null],
+      [null,null,3,5,null,null],
+      [2,null,null,3,null,null],
+      [null,null,1,null,5,null],
+      [null,null,null,null,null,6],
+      [null,3,null,null,null,null]
+    ],
+    "solution": [
+      [5,4,2,6,1,3],
+      [6,1,3,5,4,2],
+      [2,5,4,3,6,1],
+      [3,6,1,2,5,4],
+      [4,2,5,1,3,6],
+      [1,3,6,4,2,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-6-8",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,4,null,5,null,null],
+      [null,3,null,null,null,null],
+      [6,null,null,null,null,3],
+      [null,null,null,null,1,null],
+      [null,null,null,null,null,null],
+      [null,null,5,4,6,null]
+    ],
+    "solution": [
+      [1,4,6,5,3,2],
+      [5,3,2,1,4,6],
+      [6,1,4,2,5,3],
+      [2,5,3,6,1,4],
+      [4,6,1,3,2,5],
+      [3,2,5,4,6,1]
+    ]
+  },
+  {
+    "id": "KrazyDad-7-1",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,null,null],
+      [2,1,null,null,null,5],
+      [5,null,null,null,null,1],
+      [null,null,null,null,3,null],
+      [null,null,3,null,4,null],
+      [1,null,null,null,null,null]
+    ],
+    "solution": [
+      [3,6,5,2,1,4],
+      [2,1,4,3,6,5],
+      [5,3,6,4,2,1],
+      [4,2,1,5,3,6],
+      [6,5,3,1,4,2],
+      [1,4,2,6,5,3]
+    ]
+  },
+  {
+    "id": "KrazyDad-7-2",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,4,null,null],
+      [null,6,null,null,null,3],
+      [3,null,1,null,null,null],
+      [null,null,null,3,5,null],
+      [null,null,5,6,2,null],
+      [null,null,4,null,null,null]
+    ],
+    "solution": [
+      [5,1,3,4,6,2],
+      [4,6,2,5,1,3],
+      [3,5,1,2,4,6],
+      [2,4,6,3,5,1],
+      [1,3,5,6,2,4],
+      [6,2,4,1,3,5]
+    ]
+  },
+  {
+    "id": "KrazyDad-7-3",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,4,null,1,null],
+      [null,1,null,3,null,null],
+      [null,3,null,null,null,null],
+      [6,null,null,null,null,2],
+      [null,4,null,null,null,5],
+      [null,null,null,2,null,null]
+    ],
+    "solution": [
+      [3,2,4,5,1,6],
+      [5,1,6,3,2,4],
+      [4,3,2,6,5,1],
+      [6,5,1,4,3,2],
+      [2,4,3,1,6,5],
+      [1,6,5,2,4,3]
+    ]
+  },
+  {
+    "id": "KrazyDad-7-4",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,1,null,null,null,null],
+      [null,3,null,null,null,2],
+      [2,null,null,null,null,null],
+      [null,null,null,null,null,null],
+      [null,null,null,3,5,null],
+      [null,null,4,1,null,null]
+    ],
+    "solution": [
+      [6,1,2,4,3,5],
+      [4,3,5,6,1,2],
+      [2,6,1,5,4,3],
+      [5,4,3,2,6,1],
+      [1,2,6,3,5,4],
+      [3,5,4,1,2,6]
+    ]
+  },
+  {
+    "id": "KrazyDad-7-5",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [3,null,null,null,null,1],
+      [null,6,null,null,null,null],
+      [null,null,5,1,null,null],
+      [null,null,null,null,null,null],
+      [null,null,null,null,null,null],
+      [6,null,4,5,2,null]
+    ],
+    "solution": [
+      [3,5,2,4,6,1],
+      [4,6,1,3,5,2],
+      [2,3,5,1,4,6],
+      [1,4,6,2,3,5],
+      [5,2,3,6,1,4],
+      [6,1,4,5,2,3]
+    ]
+  },
+  {
+    "id": "KrazyDad-7-6",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,null,null,5],
+      [6,null,null,null,1,null],
+      [3,null,null,null,null,2],
+      [null,null,null,null,4,null],
+      [null,null,4,2,null,null],
+      [null,5,null,null,null,null]
+    ],
+    "solution": [
+      [4,1,3,6,2,5],
+      [6,2,5,4,1,3],
+      [3,4,1,5,6,2],
+      [5,6,2,3,4,1],
+      [1,3,4,2,5,6],
+      [2,5,6,1,3,4]
+    ]
+  },
+  {
+    "id": "KrazyDad-7-7",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,null,6,null,null],
+      [null,1,5,null,null,null],
+      [null,4,null,null,null,1],
+      [null,6,null,3,null,null],
+      [2,null,null,null,null,null],
+      [null,null,null,null,null,null]
+    ],
+    "solution": [
+      [4,2,3,6,1,5],
+      [6,1,5,4,2,3],
+      [3,4,2,5,6,1],
+      [5,6,1,3,4,2],
+      [2,3,4,1,5,6],
+      [1,5,6,2,3,4]
+    ]
+  },
+  {
+    "id": "KrazyDad-7-8",
+    "source": "KrazyDad",
+    "difficulty": "Medium",
+    "puzzle": [
+      [null,null,4,null,5,null],
+      [null,null,null,2,null,null],
+      [null,2,6,null,null,null],
+      [null,1,null,4,2,null],
+      [null,null,null,null,null,1],
+      [5,null,null,null,null,null]
+    ],
+    "solution": [
+      [2,6,4,1,5,3],
+      [1,5,3,2,6,4],
+      [4,2,6,3,1,5],
+      [3,1,5,4,2,6],
+      [6,4,2,5,3,1],
+      [5,3,1,6,4,2]
     ]
   }
 ]
