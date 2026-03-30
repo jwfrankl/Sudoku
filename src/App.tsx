@@ -265,7 +265,9 @@ export default function App() {
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (gameStatus === 'won') return;
     
-    if (e.key >= '1' && e.key <= '6') {
+    if (e.ctrlKey && e.key === 'z') {
+      handleUndo();
+    } else if (e.key >= '1' && e.key <= '6') {
       updateCell(parseInt(e.key));
     } else if (e.key === 'Backspace' || e.key === 'Delete') {
       updateCell(null);
@@ -280,7 +282,7 @@ export default function App() {
     } else if (e.key === 'ArrowRight' && selectedCell) {
       setSelectedCell(prev => prev ? { r: prev.r, c: Math.min(5, prev.c + 1) } : null);
     }
-  }, [updateCell, selectedCell, gameStatus]);
+  }, [updateCell, handleUndo, selectedCell, gameStatus]);
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
