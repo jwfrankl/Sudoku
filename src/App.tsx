@@ -34,6 +34,7 @@ export default function App() {
   const [checkFeedback, setCheckFeedback] = useState<'none' | 'success'>('none');
   const [hintCell, setHintCell] = useState<{ r: number; c: number } | null>(null);
   const [showWinModal, setShowWinModal] = useState(false);
+  const [debugPuzzleId, setDebugPuzzleId] = useState<string>(PREDEFINED_PUZZLES[0].id);
 
   // Timer logic
   useEffect(() => {
@@ -126,6 +127,32 @@ export default function App() {
     
     // Cycle to next puzzle for next time
     setPuzzleIndex((prev) => (prev + 1));
+  };
+
+  const loadPuzzleById = (id: string) => {
+    const predefined = PREDEFINED_PUZZLES.find(p => p.id === id);
+    if (!predefined) return;
+    const sol = predefined.solution;
+    const puzzle: Grid = predefined.puzzle.map(row =>
+      row.map(val => ({
+        value: val,
+        initial: val !== 0,
+        notes: []
+      }))
+    );
+    setSolution(sol);
+    setGrid(puzzle);
+    setCurrentPuzzleInfo({ source: predefined.source, difficulty: predefined.difficulty });
+    setHistory([]);
+    setSelectedCell(null);
+    setGameStatus('playing');
+    setIsNotesMode(false);
+    setSeconds(0);
+    setIsTimerActive(true);
+    setIncorrectCells(new Set());
+    setCheckFeedback('none');
+    setHintCell(null);
+    setShowWinModal(false);
   };
 
   const handleCellClick = (r: number, c: number) => {
@@ -440,6 +467,25 @@ export default function App() {
               ))}
             </select>
           </div>
+        </div>
+
+        {/* DEBUG: Puzzle selector */}
+        <div className="flex gap-2 items-center">
+          <select
+            value={debugPuzzleId}
+            onChange={(e) => setDebugPuzzleId(e.target.value)}
+            className="flex-1 bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
+          >
+            {PREDEFINED_PUZZLES.map(p => (
+              <option key={p.id} value={p.id}>{p.id}{p.validated ? '' : ' (unvalidated)'}</option>
+            ))}
+          </select>
+          <button
+            onClick={() => loadPuzzleById(debugPuzzleId)}
+            className="px-3 py-2 bg-[#191919] text-white rounded-lg text-sm font-semibold hover:bg-[#333333] transition-colors"
+          >
+            Load
+          </button>
         </div>
 
         {/* Grid */}

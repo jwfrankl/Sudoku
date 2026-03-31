@@ -1,16 +1,16 @@
 [
   {
     "id": "game-1",
-    "validated": false,
-    "source": "source1",
+    "validated": true,
+    "source": "AI Generator",
     "difficulty": "Easy",
     "puzzle": [
       [1,0,3,0,5,0],
       [0,5,0,1,0,3],
-      [2,0,0,0,6,0],
+      [2,0,0,5,6,0],
       [0,6,0,0,0,1],
       [3,0,2,0,4,0],
-      [0,4,0,3,0,2]
+      [0,4,5,3,0,2]
     ],
     "solution": [
       [1,2,3,4,5,6],
@@ -23,16 +23,16 @@
   },
   {
     "id": "game-2",
-    "validated": false,
-    "source": "source2",
-    "difficulty": "Medium",
+    "validated": true,
+    "source": "AI Generator",
+    "difficulty": "Easy",
     "puzzle": [
-      [0,4,0,3,0,2],
+      [0,4,5,3,0,2],
       [3,0,2,0,4,0],
       [0,6,0,0,0,1],
-      [2,0,0,0,6,0],
+      [2,0,0,0,0,0],
       [0,5,0,1,0,3],
-      [1,0,3,0,5,0]
+      [1,0,3,0,5,6]
     ],
     "solution": [
       [6,4,5,3,1,2],
@@ -46,7 +46,7 @@
   {
     "id": "game-3",
     "validated": true,
-    "source": "source1",
+    "source": "AI Generator",
     "difficulty": "Easy",
     "puzzle": [
       [2,0,1,0,6,0],
@@ -67,13 +67,13 @@
   },
   {
     "id": "game-4",
-    "validated": false,
-    "source": "source2",
+    "validated": true,
+    "source": "AI Generator",
     "difficulty": "Easy",
     "puzzle": [
       [1,4,0,6,0,5],
       [0,2,5,0,4,0],
-      [2,0,4,3,0,6],
+      [2,1,4,3,0,6],
       [3,0,6,2,0,4],
       [0,3,0,5,6,0],
       [5,0,1,0,3,2]
@@ -89,15 +89,15 @@
   },
   {
     "id": "game-5",
-    "validated": false,
-    "source": "source1",
-    "difficulty": "Medium",
+    "validated": true,
+    "source": "AI Generator",
+    "difficulty": "Easy",
     "puzzle": [
-      [1,0,3,0,5,0],
+      [1,0,3,4,5,0],
       [0,5,0,1,0,3],
       [2,0,0,0,6,0],
-      [0,6,0,0,0,1],
-      [3,0,2,0,4,0],
+      [0,6,4,0,0,1],
+      [3,0,2,0,0,0],
       [0,4,0,3,0,2]
     ],
     "solution": [
@@ -331,16 +331,16 @@
   },
   {
     "id": "KrazyDad-2-3",
-    "validated": false,
+    "validated": true,
     "source": "KrazyDad",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "puzzle": [
-      [0,5,0,0,0,0],
+      [0,5,0,2,0,6],
       [0,0,0,0,0,0],
       [0,0,0,0,0,0],
-      [0,2,0,0,0,0],
+      [0,2,4,3,0,0],
       [0,0,1,0,6,0],
-      [0,0,0,0,0,1]
+      [4,0,0,0,0,1]
     ],
     "solution": [
       [1,5,3,2,4,6],
