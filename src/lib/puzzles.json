@@ -1,6 +1,7 @@
 [
   {
     "id": "game-1",
+    "validated": false,
     "source": "source1",
     "difficulty": "Easy",
     "puzzle": [
@@ -22,6 +23,7 @@
   },
   {
     "id": "game-2",
+    "validated": false,
     "source": "source2",
     "difficulty": "Medium",
     "puzzle": [
@@ -43,8 +45,9 @@
   },
   {
     "id": "game-3",
+    "validated": true,
     "source": "source1",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "puzzle": [
       [2,0,1,0,6,0],
       [0,6,0,2,0,1],
@@ -64,6 +67,7 @@
   },
   {
     "id": "game-4",
+    "validated": false,
     "source": "source2",
     "difficulty": "Easy",
     "puzzle": [
@@ -85,6 +89,7 @@
   },
   {
     "id": "game-5",
+    "validated": false,
     "source": "source1",
     "difficulty": "Medium",
     "puzzle": [
@@ -106,6 +111,7 @@
   },
   {
     "id": "KrazyDad-1-1",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -127,6 +133,7 @@
   },
   {
     "id": "KrazyDad-1-2",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -148,6 +155,7 @@
   },
   {
     "id": "KrazyDad-1-3",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -169,6 +177,7 @@
   },
   {
     "id": "KrazyDad-1-4",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -190,8 +199,9 @@
   },
   {
     "id": "KrazyDad-1-5",
+    "validated": true,
     "source": "KrazyDad",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "puzzle": [
       [0,1,0,0,0,4],
       [0,5,0,6,0,0],
@@ -211,6 +221,7 @@
   },
   {
     "id": "KrazyDad-1-6",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -232,8 +243,9 @@
   },
   {
     "id": "KrazyDad-1-7",
+    "validated": true,
     "source": "KrazyDad",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "puzzle": [
       [0,0,0,0,1,0],
       [5,0,0,0,0,2],
@@ -253,6 +265,7 @@
   },
   {
     "id": "KrazyDad-1-8",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -274,6 +287,7 @@
   },
   {
     "id": "KrazyDad-2-1",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -295,6 +309,7 @@
   },
   {
     "id": "KrazyDad-2-2",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -316,6 +331,7 @@
   },
   {
     "id": "KrazyDad-2-3",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Hard",
     "puzzle": [
@@ -337,6 +353,7 @@
   },
   {
     "id": "KrazyDad-2-4",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -358,6 +375,7 @@
   },
   {
     "id": "KrazyDad-2-5",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -379,6 +397,7 @@
   },
   {
     "id": "KrazyDad-2-6",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -400,6 +419,7 @@
   },
   {
     "id": "KrazyDad-2-7",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -421,6 +441,7 @@
   },
   {
     "id": "KrazyDad-2-8",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -442,6 +463,7 @@
   },
   {
     "id": "KrazyDad-3-1",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -463,6 +485,7 @@
   },
   {
     "id": "KrazyDad-3-2",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -484,6 +507,7 @@
   },
   {
     "id": "KrazyDad-3-3",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -505,6 +529,7 @@
   },
   {
     "id": "KrazyDad-3-4",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -526,6 +551,7 @@
   },
   {
     "id": "KrazyDad-3-5",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -547,6 +573,7 @@
   },
   {
     "id": "KrazyDad-3-6",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -568,6 +595,7 @@
   },
   {
     "id": "KrazyDad-3-7",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -589,6 +617,7 @@
   },
   {
     "id": "KrazyDad-3-8",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -610,6 +639,7 @@
   },
   {
     "id": "KrazyDad-4-1",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -631,6 +661,7 @@
   },
   {
     "id": "KrazyDad-4-2",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -652,6 +683,7 @@
   },
   {
     "id": "KrazyDad-4-3",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -673,6 +705,7 @@
   },
   {
     "id": "KrazyDad-4-4",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -694,6 +727,7 @@
   },
   {
     "id": "KrazyDad-4-5",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -715,6 +749,7 @@
   },
   {
     "id": "KrazyDad-4-6",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -736,6 +771,7 @@
   },
   {
     "id": "KrazyDad-4-7",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -757,6 +793,7 @@
   },
   {
     "id": "KrazyDad-4-8",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -778,6 +815,7 @@
   },
   {
     "id": "KrazyDad-5-1",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -799,6 +837,7 @@
   },
   {
     "id": "KrazyDad-5-2",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -820,6 +859,7 @@
   },
   {
     "id": "KrazyDad-5-3",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -841,6 +881,7 @@
   },
   {
     "id": "KrazyDad-5-4",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -862,6 +903,7 @@
   },
   {
     "id": "KrazyDad-5-5",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -883,6 +925,7 @@
   },
   {
     "id": "KrazyDad-5-6",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -904,6 +947,7 @@
   },
   {
     "id": "KrazyDad-5-7",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -925,6 +969,7 @@
   },
   {
     "id": "KrazyDad-5-8",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -946,6 +991,7 @@
   },
   {
     "id": "KrazyDad-6-1",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -967,6 +1013,7 @@
   },
   {
     "id": "KrazyDad-6-2",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -988,6 +1035,7 @@
   },
   {
     "id": "KrazyDad-6-3",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1009,6 +1057,7 @@
   },
   {
     "id": "KrazyDad-6-4",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1030,6 +1079,7 @@
   },
   {
     "id": "KrazyDad-6-5",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1051,6 +1101,7 @@
   },
   {
     "id": "KrazyDad-6-6",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1072,6 +1123,7 @@
   },
   {
     "id": "KrazyDad-6-7",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1093,6 +1145,7 @@
   },
   {
     "id": "KrazyDad-6-8",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1114,6 +1167,7 @@
   },
   {
     "id": "KrazyDad-7-1",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1135,6 +1189,7 @@
   },
   {
     "id": "KrazyDad-7-2",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1156,6 +1211,7 @@
   },
   {
     "id": "KrazyDad-7-3",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1177,6 +1233,7 @@
   },
   {
     "id": "KrazyDad-7-4",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1198,6 +1255,7 @@
   },
   {
     "id": "KrazyDad-7-5",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1219,6 +1277,7 @@
   },
   {
     "id": "KrazyDad-7-6",
+    "validated": true,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1240,6 +1299,7 @@
   },
   {
     "id": "KrazyDad-7-7",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [
@@ -1261,6 +1321,7 @@
   },
   {
     "id": "KrazyDad-7-8",
+    "validated": false,
     "source": "KrazyDad",
     "difficulty": "Medium",
     "puzzle": [

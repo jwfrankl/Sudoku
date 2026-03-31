@@ -6,9 +6,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Pencil, Eraser, RotateCcw, CheckCircle2, Lightbulb } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  checkConflicts, 
-  isComplete 
+import {
+  checkConflicts,
+  isComplete,
+  Grid
 } from './lib/sudoku';
 import PREDEFINED_PUZZLES from './lib/puzzles.json';
 
@@ -85,7 +86,7 @@ export default function App() {
     const filteredPuzzles = PREDEFINED_PUZZLES.filter(p => {
       const sourceMatch = selectedSource === 'All' || p.source === selectedSource;
       const diffMatch = selectedDifficulty === 'All' || p.difficulty === selectedDifficulty;
-      return sourceMatch && diffMatch;
+      return p.validated && sourceMatch && diffMatch;
     });
 
     if (filteredPuzzles.length === 0) {
