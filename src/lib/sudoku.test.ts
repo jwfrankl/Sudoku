@@ -20,7 +20,7 @@ describe('isComplete', () => {
       [{value: 4, initial: true, notes: []}, {value: 5, initial: true, notes: []}, {value: 6, initial: true, notes: []}, {value: 1, initial: true, notes: []}, {value: 2, initial: true, notes: []}, {value: 3, initial: true, notes: []}],
       [{value: 2, initial: true, notes: []}, {value: 3, initial: true, notes: []}, {value: 1, initial: true, notes: []}, {value: 5, initial: true, notes: []}, {value: 6, initial: true, notes: []}, {value: 4, initial: true, notes: []}],
       [{value: 5, initial: true, notes: []}, {value: 6, initial: true, notes: []}, {value: 4, initial: true, notes: []}, {value: 2, initial: true, notes: []}, {value: 3, initial: true, notes: []}, {value: 1, initial: true, notes: []}],
-      [{value: 3, initial: true, notes: []}, {value: 1, initial: true, notes: []}, {value: 2, initial: true, notes: []}, {value: 6, initial: true, notes: []}, {value: 4, initial: true, notes: []}, {value: null, initial: false, notes: []}],
+      [{value: 3, initial: true, notes: []}, {value: 1, initial: true, notes: []}, {value: 2, initial: true, notes: []}, {value: 6, initial: true, notes: []}, {value: 4, initial: true, notes: []}, {value: 0, initial: false, notes: []}],
       [{value: 6, initial: true, notes: []}, {value: 4, initial: true, notes: []}, {value: 5, initial: true, notes: []}, {value: 3, initial: true, notes: []}, {value: 1, initial: true, notes: []}, {value: 2, initial: true, notes: []}],
     ];
     expect(isComplete(incompleteGrid)).toBe(false);
@@ -51,7 +51,7 @@ describe('checkConflicts', () => {
 
   it('should return false for no conflict', () => {
     const noConflictGrid = JSON.parse(JSON.stringify(grid));
-    noConflictGrid[0][0].value = null;
+    noConflictGrid[0][0].value = 0;
     expect(checkConflicts(noConflictGrid, 0, 0, 1)).toBe(false);
   });
 });

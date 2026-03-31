@@ -19,6 +19,7 @@ export default function App() {
   const [solution, setSolution] = useState<number[][]>([]);
   const [grid, setGrid] = useState<Grid>([]);
   const [selectedCell, setSelectedCell] = useState<{ r: number; c: number } | null>(null);
+  const [highlightNumber, setHighlightNumber] = useState<number | null>(null);
   const [isNotesMode, setIsNotesMode] = useState(false);
   const [history, setHistory] = useState<Grid[]>([]);
   const [gameStatus, setGameStatus] = useState<'playing' | 'won'>('playing');
@@ -100,7 +101,7 @@ export default function App() {
     const puzzle: Grid = predefined.puzzle.map(row => 
       row.map(val => ({
         value: val,
-        initial: val !== null,
+        initial: val !== 0,
         notes: []
       }))
     );
@@ -128,7 +129,12 @@ export default function App() {
 
   const handleCellClick = (r: number, c: number) => {
     if (gameStatus === 'won') return;
-    setSelectedCell({ r, c });
+    if (selectedCell?.r === r && selectedCell?.c === c) {
+      setHighlightNumber(grid[r][c].value);
+    } else {
+      setHighlightNumber(null);
+      setSelectedCell({ r, c });
+    }
     setHintCell(null); // Clear hint on interaction
   };
 
@@ -139,7 +145,7 @@ export default function App() {
     let hasUserEntries = false;
     grid.forEach((row, r) => {
       row.forEach((cell, c) => {
-        if (cell.value !== null && !cell.initial) {
+        if (cell.value !== 0 && !cell.initial) {
           hasUserEntries = true;
           if (cell.value !== solution[r][c]) {
             nextIncorrect.add(`${r}-${c}`);
@@ -163,7 +169,7 @@ export default function App() {
     grid.forEach((row, r) => {
       row.forEach((cell, c) => {
         // Find cells that are either empty or have an incorrect user entry
-        if (!cell.initial && (cell.value === null || cell.value !== solution[r][c])) {
+        if (!cell.initial && (cell.value === 0 || cell.value !== solution[r][c])) {
           emptyCells.push({ r, c });
         }
       });
@@ -212,7 +218,7 @@ export default function App() {
     setIncorrectCells(new Set()); // Reset incorrect highlights on undo
   };
 
-  const updateCell = useCallback((val: number | null) => {
+  const updateCell = useCallback((val: number) => {
     if (!selectedCell || gameStatus === 'won') return;
     const { r, c } = selectedCell;
     if (grid[r][c].initial) return;
@@ -231,14 +237,14 @@ export default function App() {
 
     const newGrid = [...grid.map(row => [...row.map(cell => ({ ...cell, notes: [...cell.notes] }))])];
     
-    if (isNotesMode && val !== null) {
+    if (isNotesMode && val !== 0) {
       const currentNotes = newGrid[r][c].notes;
       if (currentNotes.includes(val)) {
         newGrid[r][c].notes = currentNotes.filter(n => n !== val);
       } else {
         newGrid[r][c].notes = [...currentNotes, val].sort();
       }
-      newGrid[r][c].value = null; // Clear value if adding notes
+      newGrid[r][c].value = 0; // Clear value if adding notes
     } else {
       newGrid[r][c].value = val;
       newGrid[r][c].notes = []; // Clear notes if setting value
@@ -246,7 +252,7 @@ export default function App() {
 
     setGrid(newGrid);
 
-    if (!isNotesMode && val !== null && isComplete(newGrid)) {
+    if (!isNotesMode && val !== 0 && isComplete(newGrid)) {
       // Check if all values match solution
       const won = newGrid.every((row, ri) => 
         row.every((cell, ci) => cell.value === solution[ri][ci])
@@ -267,12 +273,13 @@ export default function App() {
     
     if (e.key === 'Escape') {
       setSelectedCell(null);
+      setHighlightNumber(null);
     } else if (e.ctrlKey && e.key === 'z') {
       handleUndo();
     } else if (e.key >= '1' && e.key <= '6') {
       updateCell(parseInt(e.key));
     } else if (e.key === 'Backspace' || e.key === 'Delete') {
-      updateCell(null);
+      updateCell(0);
     } else if (e.key === 'n' || e.key === 'N') {
       setIsNotesMode(prev => !prev);
     } else if (e.key === 'ArrowUp' && selectedCell) {
@@ -439,10 +446,11 @@ export default function App() {
           {grid.map((row, r) => (
               row.map((cell, c) => {
                 const isSelected = selectedCell?.r === r && selectedCell?.c === c;
+                const isSameNumber = !isSelected && highlightNumber !== null && highlightNumber !== 0 && cell.value === highlightNumber;
                 const cellKey = `${r}-${c}`;
                 const isIncorrect = incorrectCells.has(cellKey);
                 const isHint = hintCell?.r === r && hintCell?.c === c;
-                const hasConflict = cell.value !== null && checkConflicts(grid, r, c, cell.value);
+                const hasConflict = cell.value !== 0 && checkConflicts(grid, r, c, cell.value);
                 const isInitial = cell.initial;
                 
                 // Block borders (2x3 blocks: 2 rows high, 3 columns wide)
@@ -467,7 +475,7 @@ export default function App() {
                     className={`
                       relative flex items-center justify-center cursor-pointer select-none
                       ${borderClasses}
-                      ${isSelected ? 'bg-[#E8F3FF]' : 'hover:bg-[#F8F8F8]'}
+                      ${isSelected || isSameNumber ? 'bg-[#E8F3FF]' : 'hover:bg-[#F8F8F8]'}
                       ${hasConflict || isIncorrect ? 'bg-red-50' : isHint ? 'bg-green-100' : ''}
                     `}
                   >
@@ -548,7 +556,7 @@ export default function App() {
             );
           })}
           <button
-            onClick={() => updateCell(null)}
+            onClick={() => updateCell(0)}
             className="h-14 rounded-lg bg-[#F3F2EF] text-[#191919] hover:bg-[#E0E0E0] active:scale-95 flex flex-col items-center justify-center gap-0.5"
           >
             <Eraser size={20} />
