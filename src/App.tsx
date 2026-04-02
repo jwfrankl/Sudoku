@@ -24,7 +24,7 @@ export default function App() {
   const [isNotesMode, setIsNotesMode] = useState(false);
   const [history, setHistory] = useState<Grid[]>([]);
   const [gameStatus, setGameStatus] = useState<'playing' | 'won'>('playing');
-  const [puzzleIndex, setPuzzleIndex] = useState(Math.floor(Math.random() * PREDEFINED_PUZZLES.length));
+
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('All');
   const [showDebug, setShowDebug] = useState(false);
   const [currentPuzzleInfo, setCurrentPuzzleInfo] = useState<{ difficulty: string } | null>(null);
@@ -95,9 +95,8 @@ export default function App() {
       return;
     }
 
-    // Pick a predefined puzzle from filtered list
-    const index = puzzleIndex % filteredPuzzles.length;
-    const predefined = filteredPuzzles[index];
+    // Pick a random puzzle from filtered list
+    const predefined = filteredPuzzles[Math.floor(Math.random() * filteredPuzzles.length)];
     const sol = predefined.solution;
     const puzzle: Grid = predefined.puzzle.map(row => 
       row.map(val => ({
@@ -121,8 +120,6 @@ export default function App() {
     setHintCell(null);
     setShowWinModal(false);
     
-    // Cycle to next puzzle for next time
-    setPuzzleIndex((prev) => (prev + 1));
   };
 
   const loadPuzzleById = (id: string) => {
@@ -349,7 +346,6 @@ export default function App() {
                 value={selectedDifficulty}
                 onChange={(e) => {
                   setSelectedDifficulty(e.target.value);
-                  setPuzzleIndex(0);
                 }}
                 className="bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
               >
@@ -370,8 +366,6 @@ export default function App() {
             <button 
               onClick={() => {
                 setSelectedDifficulty('All');
-                setPuzzleIndex(0);
-                // We need to trigger startNewGame manually since useEffect dependency is removed
                 setTimeout(startNewGame, 0);
               }}
               className="py-3 bg-[#F3F2EF] text-[#5C5C5C] rounded-full font-bold hover:bg-[#E0E0E0] transition-colors"
@@ -424,7 +418,6 @@ export default function App() {
                 value={selectedDifficulty}
                 onChange={(e) => {
                   setSelectedDifficulty(e.target.value);
-                  setPuzzleIndex(0);
                 }}
                 className="flex-1 bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
               >
