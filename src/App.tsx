@@ -13,7 +13,7 @@ import {
 } from './lib/sudoku';
 import PREDEFINED_PUZZLES from './lib/puzzles.json';
 
-const AVAILABLE_SOURCES = Array.from(new Set(PREDEFINED_PUZZLES.map(p => p.source))).sort();
+const DEBUG_ENABLED = true; // Set to true to enable debug features like loading specific puzzles
 const AVAILABLE_DIFFICULTIES = Array.from(new Set(PREDEFINED_PUZZLES.map(p => p.difficulty))).sort();
 
 export default function App() {
@@ -25,9 +25,9 @@ export default function App() {
   const [history, setHistory] = useState<Grid[]>([]);
   const [gameStatus, setGameStatus] = useState<'playing' | 'won'>('playing');
   const [puzzleIndex, setPuzzleIndex] = useState(Math.floor(Math.random() * PREDEFINED_PUZZLES.length));
-  const [selectedSource, setSelectedSource] = useState<string>('All');
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('All');
-  const [currentPuzzleInfo, setCurrentPuzzleInfo] = useState<{ source: string; difficulty: string } | null>(null);
+  const [showDebug, setShowDebug] = useState(false);
+  const [currentPuzzleInfo, setCurrentPuzzleInfo] = useState<{ difficulty: string } | null>(null);
   const [seconds, setSeconds] = useState(0);
   const [isTimerActive, setIsTimerActive] = useState(false);
   const [incorrectCells, setIncorrectCells] = useState<Set<string>>(new Set());
@@ -85,9 +85,8 @@ export default function App() {
   const startNewGame = () => {
     // Filter puzzles based on selection
     const filteredPuzzles = PREDEFINED_PUZZLES.filter(p => {
-      const sourceMatch = selectedSource === 'All' || p.source === selectedSource;
       const diffMatch = selectedDifficulty === 'All' || p.difficulty === selectedDifficulty;
-      return p.validated && sourceMatch && diffMatch;
+      return p.validated && diffMatch;
     });
 
     if (filteredPuzzles.length === 0) {
@@ -110,10 +109,7 @@ export default function App() {
 
     setSolution(sol);
     setGrid(puzzle);
-    setCurrentPuzzleInfo({ 
-      source: predefined.source, 
-      difficulty: predefined.difficulty 
-    });
+    setCurrentPuzzleInfo({ difficulty: predefined.difficulty });
     setHistory([]);
     setSelectedCell(null);
     setGameStatus('playing');
@@ -142,7 +138,7 @@ export default function App() {
     );
     setSolution(sol);
     setGrid(puzzle);
-    setCurrentPuzzleInfo({ source: predefined.source, difficulty: predefined.difficulty });
+    setCurrentPuzzleInfo({ difficulty: predefined.difficulty });
     setHistory([]);
     setSelectedCell(null);
     setGameStatus('playing');
@@ -346,26 +342,10 @@ export default function App() {
         <div className="w-full max-w-md bg-white rounded-xl shadow-sm p-6 flex flex-col gap-6 text-center">
           <h1 className="text-2xl font-bold tracking-tight">Mini Sudoku</h1>
           <p className="text-[#5C5C5C]">No puzzles found for the selected filters.</p>
-          <div className="grid grid-cols-2 gap-4 text-left">
-            <div className="flex flex-col gap-1">
-              <label className="text-[10px] font-bold uppercase text-[#5C5C5C] tracking-wider">Source</label>
-              <select 
-                value={selectedSource}
-                onChange={(e) => {
-                  setSelectedSource(e.target.value);
-                  setPuzzleIndex(0);
-                }}
-                className="bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
-              >
-                <option value="All">All Sources</option>
-                {AVAILABLE_SOURCES.map(source => (
-                  <option key={source} value={source}>{source}</option>
-                ))}
-              </select>
-            </div>
+          <div className="text-left">
             <div className="flex flex-col gap-1">
               <label className="text-[10px] font-bold uppercase text-[#5C5C5C] tracking-wider">Difficulty</label>
-              <select 
+              <select
                 value={selectedDifficulty}
                 onChange={(e) => {
                   setSelectedDifficulty(e.target.value);
@@ -389,7 +369,6 @@ export default function App() {
             </button>
             <button 
               onClick={() => {
-                setSelectedSource('All');
                 setSelectedDifficulty('All');
                 setPuzzleIndex(0);
                 // We need to trigger startNewGame manually since useEffect dependency is removed
@@ -409,87 +388,82 @@ export default function App() {
     <div className="min-h-screen bg-[#F3F2EF] flex flex-col items-center justify-center p-4 font-sans text-[#191919]">
       <div className="w-full max-w-md bg-white rounded-xl shadow-sm p-6 flex flex-col gap-6">
         <div className="flex justify-between items-center">
-          <div className="flex flex-col">
-            <h1 className="text-2xl font-bold tracking-tight">Mini Sudoku</h1>
+          <h1 className="text-2xl font-bold tracking-tight">Mini Sudoku</h1>
+          {DEBUG_ENABLED && (
+            <label className="flex items-center gap-1.5 text-xs font-bold text-[#5C5C5C] cursor-pointer">
+              <input
+                type="checkbox"
+                checked={showDebug}
+                onChange={(e) => setShowDebug(e.target.checked)}
+                className="cursor-pointer"
+              />
+              Debug
+            </label>
+          )}
+        </div>
+
+        <div className="grid grid-cols-2 gap-4">
+          {/* Current Game */}
+          <div className="flex flex-col gap-1">
+            <span className="text-[12px] font-bold uppercase text-[#5C5C5C] tracking-wider">Current Game</span>
             <div className="text-sm font-mono text-[#5C5C5C] font-medium">
               Time: {formatTime(seconds)}
             </div>
             {currentPuzzleInfo && (
-              <div className="flex flex-wrap gap-x-4 gap-y-1 mt-1">
-                <span className="text-[10px] font-bold uppercase text-[#5C5C5C]">
-                  Source: <span className="bg-[#F3F2EF] px-1.5 py-0.5 rounded">{currentPuzzleInfo.source}</span>
-                </span>
-                <span className="text-[10px] font-bold uppercase text-[#5C5C5C]">
-                  Difficulty: <span className="bg-[#F3F2EF] px-1.5 py-0.5 rounded">{currentPuzzleInfo.difficulty}</span>
-                </span>
+              <span className="text-[10px] font-bold uppercase text-[#5C5C5C]">
+                Difficulty: <span className="bg-[#F3F2EF] px-1.5 py-0.5 rounded">{currentPuzzleInfo.difficulty}</span>
+              </span>
+            )}
+          </div>
+
+          {/* New Game */}
+          <div className="flex flex-col gap-2">
+            <span className="text-[12px] font-bold uppercase text-[#5C5C5C] tracking-wider">New Game</span>
+            <div className="flex gap-2">
+              <select
+                value={selectedDifficulty}
+                onChange={(e) => {
+                  setSelectedDifficulty(e.target.value);
+                  setPuzzleIndex(0);
+                }}
+                className="flex-1 bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
+              >
+                <option value="All">All Difficulties</option>
+                {AVAILABLE_DIFFICULTIES.map(diff => (
+                  <option key={diff} value={diff}>{diff}</option>
+                ))}
+              </select>
+              <button
+                onClick={startNewGame}
+                className="px-3 py-2 bg-[#191919] text-white rounded-lg text-sm font-semibold hover:bg-[#333333] transition-colors"
+              >
+                Start
+              </button>
+            </div>
+            {showDebug && (
+              <div className="flex gap-2">
+                <select
+                  value={debugPuzzleId}
+                  onChange={(e) => setDebugPuzzleId(e.target.value)}
+                  className="flex-1 bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
+                >
+                  {PREDEFINED_PUZZLES.map(p => (
+                    <option key={p.id} value={p.id}>{p.id}{p.validated ? '' : ' (unvalidated)'}</option>
+                  ))}
+                </select>
+                <button
+                  onClick={() => loadPuzzleById(debugPuzzleId)}
+                  className="px-3 py-2 bg-[#191919] text-white rounded-lg text-sm font-semibold hover:bg-[#333333] transition-colors"
+                >
+                  Load
+                </button>
               </div>
             )}
           </div>
-          <button 
-            onClick={startNewGame}
-            className="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
-          >
-            New Game
-          </button>
-        </div>
-
-        {/* Filters */}
-        <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-1">
-            <label className="text-[10px] font-bold uppercase text-[#5C5C5C] tracking-wider">Source</label>
-            <select 
-              value={selectedSource}
-              onChange={(e) => {
-                setSelectedSource(e.target.value);
-                setPuzzleIndex(0);
-              }}
-              className="bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
-            >
-              <option value="All">All Sources</option>
-              {AVAILABLE_SOURCES.map(source => (
-                <option key={source} value={source}>{source}</option>
-              ))}
-            </select>
-          </div>
-          <div className="flex flex-col gap-1">
-            <label className="text-[10px] font-bold uppercase text-[#5C5C5C] tracking-wider">Difficulty</label>
-            <select 
-              value={selectedDifficulty}
-              onChange={(e) => {
-                setSelectedDifficulty(e.target.value);
-                setPuzzleIndex(0);
-              }}
-              className="bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
-            >
-              <option value="All">All Difficulties</option>
-              {AVAILABLE_DIFFICULTIES.map(diff => (
-                <option key={diff} value={diff}>{diff}</option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        {/* DEBUG: Puzzle selector */}
-        <div className="flex gap-2 items-center">
-          <select
-            value={debugPuzzleId}
-            onChange={(e) => setDebugPuzzleId(e.target.value)}
-            className="flex-1 bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
-          >
-            {PREDEFINED_PUZZLES.map(p => (
-              <option key={p.id} value={p.id}>{p.id}{p.validated ? '' : ' (unvalidated)'}</option>
-            ))}
-          </select>
-          <button
-            onClick={() => loadPuzzleById(debugPuzzleId)}
-            className="px-3 py-2 bg-[#191919] text-white rounded-lg text-sm font-semibold hover:bg-[#333333] transition-colors"
-          >
-            Load
-          </button>
         </div>
 
         {/* Grid */}
-        <div className="relative aspect-square w-full grid grid-cols-6 grid-rows-6 bg-white overflow-hidden border border-[#E0E0E0]">
+        <div className="relative aspect-square w-full grid grid-cols-6 grid-rows-6 bg-white overflow-hidden border-2 border-black">
           {grid.map((row, r) => (
               row.map((cell, c) => {
                 const isSelected = selectedCell?.r === r && selectedCell?.c === c;
