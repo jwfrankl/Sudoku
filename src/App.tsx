@@ -13,7 +13,7 @@ import {
 } from './lib/sudoku';
 import PREDEFINED_PUZZLES from './lib/puzzles.json';
 
-const DEBUG_ENABLED = true; // Set to true to enable debug features like loading specific puzzles
+const DEBUG_ENABLED = false; // Set to true to enable debug features like loading specific puzzles
 const AVAILABLE_DIFFICULTIES = Array.from(new Set(PREDEFINED_PUZZLES.map(p => p.difficulty))).sort();
 
 export default function App() {
@@ -26,6 +26,7 @@ export default function App() {
   const [gameStatus, setGameStatus] = useState<'playing' | 'won'>('playing');
 
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('All');
+  const [recentPuzzleIds, setRecentPuzzleIds] = useState<string[]>([]);
   const [showDebug, setShowDebug] = useState(false);
   const [currentPuzzleInfo, setCurrentPuzzleInfo] = useState<{ difficulty: string } | null>(null);
   const [seconds, setSeconds] = useState(0);
@@ -95,8 +96,10 @@ export default function App() {
       return;
     }
 
-    // Pick a random puzzle from filtered list
-    const predefined = filteredPuzzles[Math.floor(Math.random() * filteredPuzzles.length)];
+    // Exclude recently played puzzles, falling back to full list if needed
+    const candidates = filteredPuzzles.filter(p => !recentPuzzleIds.includes(p.id));
+    const pool = candidates.length > 0 ? candidates : filteredPuzzles;
+    const predefined = pool[Math.floor(Math.random() * pool.length)];
     const sol = predefined.solution;
     const puzzle: Grid = predefined.puzzle.map(row => 
       row.map(val => ({
@@ -106,6 +109,7 @@ export default function App() {
       }))
     );
 
+    setRecentPuzzleIds(prev => [...prev.slice(-19), predefined.id]);
     setSolution(sol);
     setGrid(puzzle);
     setCurrentPuzzleInfo({ difficulty: predefined.difficulty });
@@ -119,7 +123,6 @@ export default function App() {
     setCheckFeedback('none');
     setHintCell(null);
     setShowWinModal(false);
-    
   };
 
   const loadPuzzleById = (id: string) => {
