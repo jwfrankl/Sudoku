@@ -14,7 +14,8 @@ import {
 import PREDEFINED_PUZZLES from './lib/puzzles.json';
 
 const DEBUG_ENABLED = false; // Set to true to enable debug features like loading specific puzzles
-const AVAILABLE_DIFFICULTIES = Array.from(new Set(PREDEFINED_PUZZLES.map(p => p.difficulty))).sort();
+// const AVAILABLE_DIFFICULTIES = Array.from(new Set(PREDEFINED_PUZZLES.map(p => p.difficulty))).sort();
+const AVAILABLE_DIFFICULTIES = ['Easy', 'Medium', 'Hard'];  // Define available difficulties explicitly rather than relying on puzzle data
 
 export default function App() {
   const [solution, setSolution] = useState<number[][]>([]);
@@ -154,7 +155,12 @@ export default function App() {
   const handleCellClick = (r: number, c: number) => {
     if (gameStatus === 'won') return;
     if (selectedCell?.r === r && selectedCell?.c === c) {
-      setHighlightNumber(grid[r][c].value);
+      if (grid[r][c].value === 0) {
+        setSelectedCell(null);
+        setHighlightNumber(null);
+      } else {
+        setHighlightNumber(grid[r][c].value);
+      }
     } else {
       setHighlightNumber(null);
       setSelectedCell({ r, c });
