@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig({
+  base: './',
   plugins: [react(), tailwindcss()],
   define: {
     'process.env.GEMINI_API_KEY': JSON.stringify(process.env.GEMINI_API_KEY),
