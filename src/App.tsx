@@ -37,9 +37,6 @@ export default function App() {
   const [hintCell, setHintCell] = useState<{ r: number; c: number } | null>(null);
   const [showWinModal, setShowWinModal] = useState(false);
   const [debugPuzzleId, setDebugPuzzleId] = useState<string>(PREDEFINED_PUZZLES[0].id);
-  const [entryMode, setEntryMode] = useState<'cell-first' | 'digit-first'>(
-    () => window.innerWidth < 480 ? 'digit-first' : 'cell-first'
-  );
 
   // Timer logic
   useEffect(() => {
@@ -159,6 +156,9 @@ export default function App() {
     if (gameStatus === 'won') return;
     if (selectedCell?.r === r && selectedCell?.c === c) {
       if (grid[r][c].value === 0) {
+        setSelectedCell(null);
+        setHighlightNumber(null);
+      } else if (highlightNumber === grid[r][c].value || getNumberCount(grid[r][c].value) === 1) {
         setSelectedCell(null);
         setHighlightNumber(null);
       } else {
@@ -618,21 +618,6 @@ export default function App() {
           </button>
         </div>
 
-        {/* Entry Mode */}
-        <div className="flex items-center justify-center gap-2">
-          <span className="text-[10px] font-bold uppercase text-[#5C5C5C] tracking-wider">Entry Mode</span>
-          <div className="flex rounded-lg overflow-hidden border border-[#E0E0E0]">
-            {(['cell-first', 'digit-first'] as const).map((mode) => (
-              <button
-                key={mode}
-                onClick={() => setEntryMode(mode)}
-                className={`px-3 py-1 text-xs font-bold uppercase tracking-wider transition-colors ${entryMode === mode ? 'bg-[#191919] text-white' : 'bg-white text-[#5C5C5C] hover:bg-[#F3F2EF]'}`}
-              >
-                {mode === 'cell-first' ? 'Cell First' : 'Digit First'}
-              </button>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Win Modal */}
