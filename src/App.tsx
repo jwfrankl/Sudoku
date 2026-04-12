@@ -37,6 +37,9 @@ export default function App() {
   const [hintCell, setHintCell] = useState<{ r: number; c: number } | null>(null);
   const [showWinModal, setShowWinModal] = useState(false);
   const [debugPuzzleId, setDebugPuzzleId] = useState<string>(PREDEFINED_PUZZLES[0].id);
+  const [entryMode, setEntryMode] = useState<'cell-first' | 'digit-first'>(
+    () => window.innerWidth < 480 ? 'digit-first' : 'cell-first'
+  );
 
   // Timer logic
   useEffect(() => {
@@ -529,7 +532,7 @@ export default function App() {
         </div>
 
         {/* Controls */}
-        <div className="flex justify-center gap-4 items-center py-2">
+        <div className="flex justify-center gap-4 items-center py-2 -mt-2">
           <button 
             onClick={handleHint}
             className="flex items-center gap-2 px-3 py-1.5 rounded-full text-[#5C5C5C] hover:bg-[#F3F2EF] transition-all"
@@ -560,7 +563,7 @@ export default function App() {
         </div>
 
         {/* Number Pad */}
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-4 gap-3 -mt-3">
           {[1, 2, 3].map(num => {
             const count = getNumberCount(num);
             const isDisabled = count >= 6;
@@ -613,6 +616,22 @@ export default function App() {
             <RotateCcw size={20} />
             <span className="text-[10px] font-bold uppercase">Undo</span>
           </button>
+        </div>
+
+        {/* Entry Mode */}
+        <div className="flex items-center justify-center gap-2">
+          <span className="text-[10px] font-bold uppercase text-[#5C5C5C] tracking-wider">Entry Mode</span>
+          <div className="flex rounded-lg overflow-hidden border border-[#E0E0E0]">
+            {(['cell-first', 'digit-first'] as const).map((mode) => (
+              <button
+                key={mode}
+                onClick={() => setEntryMode(mode)}
+                className={`px-3 py-1 text-xs font-bold uppercase tracking-wider transition-colors ${entryMode === mode ? 'bg-[#191919] text-white' : 'bg-white text-[#5C5C5C] hover:bg-[#F3F2EF]'}`}
+              >
+                {mode === 'cell-first' ? 'Cell First' : 'Digit First'}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
