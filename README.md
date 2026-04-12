@@ -12,5 +12,7 @@
 # Build and Deploy
 1. Build:
    Run `npm run build` to build and create the dist folder
-2. Validate deployed static page:
+2. Validate static page:
    Run `npm run preview`
+3. Deploy
+   Run `npm run deploy` to deploy to github branch

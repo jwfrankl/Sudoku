@@ -422,13 +422,13 @@ export default function App() {
           {/* New Game */}
           <div className="flex flex-col gap-2">
             <span className="text-[12px] font-bold uppercase text-[#5C5C5C] tracking-wider">New Game</span>
-            <div className="flex gap-2">
+            <div className="flex flex-col min-[480px]:flex-row gap-2">
               <select
                 value={selectedDifficulty}
                 onChange={(e) => {
                   setSelectedDifficulty(e.target.value);
                 }}
-                className="flex-1 bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
+                className="w-full min-[480px]:flex-1 bg-[#F3F2EF] border-none rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
               >
                 <option value="All">All Difficulties</option>
                 {AVAILABLE_DIFFICULTIES.map(diff => (
@@ -437,7 +437,7 @@ export default function App() {
               </select>
               <button
                 onClick={startNewGame}
-                className="px-3 py-2 bg-[#191919] text-white rounded-lg text-sm font-semibold hover:bg-[#333333] transition-colors"
+                className="self-end min-[480px]:self-auto px-3 py-2 bg-[#191919] text-white rounded-lg text-sm font-semibold hover:bg-[#333333] transition-colors"
               >
                 Start
               </button>
